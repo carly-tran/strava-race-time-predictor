@@ -1,21 +1,16 @@
-# 🏃 Strava Race Time Predictor
+# Strava Race Time Predictor
 
-Predict half-marathon (and other races) finish times using **training data from Strava** combined with machine learning models.  
-This project is both a **portfolio piece** (clear, documented, reproducible) and a **practical tool** for analyzing running performance.
+This project uses Strava training data and machine learning to predict half-marathon (and other races) finish times. By combining training load, long-run paces, heart-rate zones, elevation gain, and other workout features, the model provides a data-driven estimate of race performance.
 
----
+## Overview
+- Uses training features such as pace, heart rate zones, elevation, and mileage.
+- Includes feature engineering, exploratory data analysis, and regression-based models.
+- Provides visualizations of training load, predicted finish times, and actual vs. predicted comparisons.
+- Raw Strava exports are excluded for privacy.
 
-## 📌 Overview
-- Uses training data (pace, heart rate zones, elevation, mileage) to predict likely race finish times.  
-- Implements **feature engineering**, **exploratory data analysis**, and **ML models** (e.g. regression, tree-based).  
-- Visualizes training load vs. predicted time with **Jupyter notebooks & plots**.  
-- Designed with reproducibility and data privacy in mind — **no raw Strava exports are included**.
-
----
-
-## ⚡ Key Features
-- **Data pipeline**: Cleans Strava exports into structured CSV/Parquet.  
-- **Feature engineering**: Rolling averages, long-run effects, heart-rate zone distribution.  
-- **Modeling**: Regression baselines, ML models (e.g. Ridge/Random Forest).  
-- **Visualization**: Training progress, predicted finish time distributions, actual vs. predicted plots.  
-- **Reproducibility**: `requirements.txt` + `.env.example` for API keys and configs.  
+## Features
+- Data cleaning pipeline for Strava exports.
+- Feature engineering: rolling averages, long-run effects, heart rate distribution.
+- Modeling: linear regression, ridge regression, random forest.
+- Visualization of trends and model performance.
+- Reproducibility with `requirements.txt` and `.env.example`.
